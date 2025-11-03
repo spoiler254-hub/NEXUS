@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Nexus — Community</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div id="bg-anim"></div>
+
+
+<main class="app-shell">
+<header class="brand">
+<h1>NEXUS</h1>
+<p class="tag">Connect • Share • Evolve</p>
+</header>
+
+
+<section id="auth" class="card auth-card">
+<h2>Welcome back</h2>
+<p>Sign in to join the Nexus community.</p>
+
+
+<div class="oauth-buttons">
+<button id="btn-google" class="btn oauth">Sign in with Google</button>
+<button id="btn-microsoft" class="btn oauth">Sign in with Microsoft</button>
+<button id="btn-apple" class="btn oauth">Sign in with Apple</button>
+</div>
+
+
+<div class="or">— or —</div>
+<form id="email-login" class="login-form">
+<input name="email" placeholder="Email" type="email" required />
+<input name="password" placeholder="Password" type="password" required />
+<button class="btn primary" type="submit">Sign in</button>
+</form>
+
+
+</section>
+
+
+<section id="feed" class="hidden">
+<div class="feed-header">
+<h2>Home</h2>
+<button id="btn-new" class="btn">New Post</button>
+</div>
+<div id="posts" class="posts"></div>
+</section>
+
+
+<footer class="foot">© <span id="year"></span> Nexus — Built for tomorrow</footer>
+</main>
+
+
+<script src="/app.js"></script>
+</body>
+</html>
